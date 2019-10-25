@@ -1,0 +1,6 @@
+.main {
+  background: map-get($map: $colors-neutral, $key: light-gray);
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}

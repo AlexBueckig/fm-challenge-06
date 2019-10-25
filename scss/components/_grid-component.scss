@@ -1,0 +1,54 @@
+.grid-component {
+  background: white;
+  padding: 1.5em 1.25em;
+  grid-area: join;
+
+  &--cta {
+    background: map-get($map: $colors-primary, $key: cyan);
+    grid-area: cta;
+  }
+
+  &--why-us {
+    background: lighten(map-get($map: $colors-primary, $key: cyan), 10%);
+    grid-area: whyus;
+  }
+
+  &__price {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5em;
+  }
+
+  &__price--highlight {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-right: 0.4em;
+  }
+
+  &__cta-text {
+    margin-bottom: 1.75em;
+  }
+
+  &__title,
+  &__subtitle {
+    margin-bottom: 1em;
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__list-item {
+    margin-bottom: 0.25em;
+  }
+}
+
+@include for-tablet-landscape-up {
+  .grid-component {
+    padding: 2.5em 2.5em;
+
+    &__subtitle {
+      margin-bottom: 0.5em;
+    }
+  }
+}

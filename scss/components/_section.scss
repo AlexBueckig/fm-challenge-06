@@ -1,0 +1,15 @@
+.section {
+  margin: 0 2em;
+  border-radius: 5px;
+  overflow: hidden;
+  max-width: 400px;
+}
+
+@include for-tablet-landscape-up {
+  .section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'join join' 'cta whyus';
+    max-width: 650px;
+  }
+}

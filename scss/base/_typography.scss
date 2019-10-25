@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Karla:400,700&display=swap');
+
+body {
+  font-family: 'Karla', sans-serif;
+  font-size: 1rem;
+}
+
+.grid-component--cta,
+.grid-component--why-us {
+  color: map-get($map: $colors-neutral, $key: light-gray);
+}
+
+.grid-component__title {
+  color: map-get($map: $colors-primary, $key: cyan);
+  font-size: 1.1rem;
+}
+
+.grid-component__title--cta,
+.grid-component__title--why-us,
+.grid-component__cta-text {
+  color: map-get($map: $colors-neutral, $key: light-gray);
+}
+
+.grid-component__subtitle {
+  color: map-get($map: $colors-primary, $key: bright-yellow);
+  font-weight: 700;
+}
+
+.grid-component__list-item,
+.grid-component__text {
+  font-size: 0.8rem;
+}
+
+.grid-component__text {
+  color: map-get($map: $colors-neutral, $key: grayish-blue);
+  line-height: 2;
+}
+
+.grid-component__text--light {
+  color: map-get($map: $colors-neutral, $key: light-gray);
+}
+
+.grid-component__price {
+  font-size: 1rem;
+  color: rgba(map-get($map: $colors-neutral, $key: light-gray), 0.5);
+}
+
+.grid-component__price--highlight {
+  font-size: 2rem;
+  font-weight: 700;
+  color: map-get($map: $colors-neutral, $key: light-gray);
+}
+
+.button {
+  font-size: 1rem;
+  text-decoration: none;
+  text-align: center;
+  color: map-get($map: $colors-neutral, $key: light-gray);
+}
+
+@include for-tablet-landscape-up {
+  .grid-component__title {
+    font-size: 1.5rem;
+  }
+
+  .grid-component__title--cta,
+  .grid-component__title--why-us,
+  .grid-component__subtitle {
+    font-size: 1.125rem;
+  }
+
+  .grid-component__text {
+    font-size: 1rem;
+  }
+
+  .grid-component__list-item {
+    font-size: 0.875em;
+  }
+
+  .grid-component__text {
+    line-height: 1.7;
+  }
+}
